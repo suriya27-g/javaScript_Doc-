@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Exercise</title>
+    <script>
+        /*  Welcome Text ,Console.log is used to print in console.
+            We have to specify the text in single or double quotes.
+        */
+        console.log('Welcome Suriya !!!');
+
+        /*  Strings-
+                As we mentioned above strings can be in double or single quotes.*/
+        console.log("Hello World");
+        console.log('Hellow World');
+        console.log('12');
+
+        /*  Numbers-
+                Numbers should not mentioned in quotes. If we mention numbers
+                in quotes this will become as string. */
+        console.log(2+3);
+        console.log(11);
+        //Example-
+        console.log("10+5");
+        console.log(10+5);
+        //Output-
+        //10+5
+        //15
+
+        /*  Variables- 
+                let is used to define a variable. You can store a value in variable,
+                value means any values let it be string or numbers.  */
+        let language = 'python';
+        console.log(language);
+        // You can change the value of variable in a program.
+        language = 'javaScript';
+        console.log(language);
+
+        // You can combine two strings using '+' symbol
+        console.log(language + ' is a powerful language');
+        //output-
+        //javaScript is a powerful language
+
+        /* Template Literals */
+        /* This is the new features in Modern javascript. You can add string
+            without using (+) symbol.*/
+            //Syntax
+            // ` ${Any_string} `
+            // (`)=> Back tick
+            let temp = 'Suriya';
+            console.log(` My name is ${temp} `)
+            //output- My name is Suriya
+
+        
+        /* Constants-
+                Const is used to define a contant value either it is number
+                or string or real any thing. */
+        const number = 10;
+        console.log(number);
+        /* While changing the value of constant(number) will give you an error.
+            you may think that this will be a major proble , but when you work
+            in real in examples you will face updation problem. So, you can use
+            constant to avoid this updation problems.*/
+        //number = 11;
+        //console.log(number);
+
+        /*  Operators- */
+            // Boolean Operator- It will give either True or False.
+            console.log(2<3);
+            console.log(2>3);
+            //output
+            //True
+            //False
+
+            // Arithmetic Operator- using this you can perform arithmetic operation.
+            //('+','-','*','/','%')
+            console.log(7+3);
+            console.log(7-3);
+            console.log(7*3);
+            console.log(7/3);
+            console.log(7%3);
+
+            // Relational Operator- you can compare two things using relational operator.
+            //('<',">",'<=','>=','==','!=')
+            /* Note - This will give you a True or False value, Relational operator is
+               mostely used in conditional or looping statements.  */
+            let a=5;
+            let b=1;
+            console.log(a==b);
+            console.log(a>b);
+
+            // Logical operator- (AND(&&) , OR(||))
+            // These opertaors are also mostely used in conditional statements.
+            // This will also gives you a True or False value.
+            let Name = 'Raj';
+            let Age = 18;
+            console.log(Name=='Raj' && Age==18);
+            // if both the conditions are true it will give True.
+            console.log(Name=='Raj' || Age!=18);
+            // if any one of the condition is true it will give True.
+
+        /* Conditional Statements- */
+        /* if statement - if the condition is true it will execute the given statement.*/
+        let check = true;
+        if(check)
+        {
+            console.log('Hi');
+        }
+
+        /* if-else statement- In the above if statement it will execute the statement 
+                              when the condition is true or it will not return nothing.
+                              So, we use else block to give something to the user.   */
+        let lang ='Tamil';
+        if(lang == 'English')
+        {
+            console.log('language is not matching')
+        }
+        else{
+            console.log(lang);
+        }
+
+        /* if-ese if-else - This is more efficient than if-else statemnet.*/
+        const age=17;
+        if(age >= 18)
+        {
+            console.log('I am 18+');
+        }
+        else if(age < 18)
+        {
+            console.log('I am 10+');
+        }
+        else{
+            console.log('I am under 10');
+        }
+
+        /* SwitchCase Statement */
+        /* This is more effective than if-else statement because in if-else */
+        /* Note - After every case use break statement , without break using
+           switch case is not effective.*/ 
+        let grade = 'B';
+        switch('B')
+        {
+            case 'A':
+                console.log('very good');
+                break;
+            case 'B':
+                console.log('good');
+                break;
+            case 'C': 
+                console.log('not bod');
+                break;
+            default : 
+                console.log('work hard');
+                break;
+        }
+
+        /* Looping statements */
+        /* They are also called as iterative statements. We can print a statement 
+           en-number of times using looping statement. */
+
+           // While Loop- 
+           // Syntax
+           /* while(condition)
+               {
+                   statement;
+               } 
+            */
+            let num = 1;
+            while(num<=5) // condition
+            {
+                console.log(num); // print num
+                num++; // incrementing num
+            }
+
+            // For Loop-
+            // Syntax
+            /* for(initialize ;condition ;increment/decrement )
+                {
+                    statement;
+                } 
+            */
+            //Let us take the above example.
+            for(let n=1 ;n<=5 ;n++)
+            {
+                console.log(n);
+            }
+          
+    </script>
+</head>
+<body>
+    <h1>javaScript for Beginers</h1>
+</body>
+</html>
