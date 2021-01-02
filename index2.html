@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript_Exercise</title>
+    <script>
+        /*NOTE - Please try these syntax in your local machine
+                 you can see the output in console.*/
+
+        /* Arrays in javaScript-
+                An array is a collection of elements of similar type of elements.
+            In javaScript we have two types of array syntax.
+                        - constructor syntax
+                        - literal syntax*/
+            /* Constructor Syntax */
+            // In these ways we can use array.
+                // Example 1 - empty array
+                let arr = new Array();
+                console.log(arr)
+                 // Example 2 - array of size 5
+                let num1 =new Array(5);
+                num1=['1','2','3','4','5'];
+                console.log(num1);
+                 // Example 3 - array of size 3
+                let games =new Array('Pubg','Fortnite','COD');
+                console.log(games);
+
+            /* Literal Syntax */
+            // In these ways we can use array.
+                // Example 1 - empty array
+                let num3=[];
+                console.log(num3);
+                // Example 2 - We can pass objects inside array
+                let users=[
+                {name:'Raj',password:1234},
+                {name:'Sam',password:4321}
+                ];
+                console.log(users);
+            
+            /* Some of the methods in Array */
+                /* isArray() method will check weather the users vaiable is Array variable or not.
+                    This will print true or false (Boolean values) */
+                console.log(Array.isArray(users));
+                /* This is also same as isArray() method,this will print true or false(Boolean values)*/
+                console.log(users instanceof Array);
+                /* valueOf() - this will print values of array */
+                console.log(users.valueOf());
+
+                /*Push and Pop method*/
+                let fruitshop=['apple','mango','orange'];
+                console.log(fruitshop);
+                // push method will push the item at lastIndex of array
+                fruitshop.push('banana');
+                console.log(fruitshop);
+                // pop method will pop the item at lastIndex of array
+                fruitshop.pop();
+                console.log(fruitshop);
+
+                /*push,shift and unshift method*/
+                fruitshop.push('grape');
+                console.log(fruitshop);
+                // shift method will pop the item at firstIndex of array
+                let shifted=fruitshop.shift();
+                console.log(fruitshop);
+                // This unshift method will unshift the shifted item back to array
+                fruitshop.unshift(shifted);
+                console.log(fruitshop);
+
+                /*concat,slice and splice method*/
+                let number=[1,2,3,4,5];
+                console.log(number);
+                // This will concatenate two string  
+                let arr1=number.concat();
+                arr1.push(11);
+                console.log(arr1);
+                console.log(number);
+                // We can slice the array using slice method
+                // Syntax- slice(startpoint , endpoint) => this will print values before the ending point.
+                let arr2=number.slice(0,3);
+                console.log(arr2);
+                // We can select some values in array and we can insert values,this is not like slice.
+                //Syntax- splice(no of elements, positin to insert an element, insert a element)
+                arr2.splice(2,3,10);
+                console.log(arr2);
+    
+    </script>
+</head>
+<body>
+    <h1>jacvaScript for Beginers</h1>
+</body>
+</html>
